@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    
+    <div class="containsai">
+         <h1 class="text-3xl text-center font-bold leading-tight">Registration Form</h1><br>
+        <form id="sai-form">
+          <div class="row">
+            <div class="sai-25">
+              <label for="name">Name</label>
+            </div>
+            <div class="sai-75">
+              <input required type="text" id="name" name="name"
+              style="margin-left:30px"
+              placeholder="Enter Full name"/><br /><br />
+            </div>
+            <div class="sai-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="sai-75">
+              <input required type="email" id="email" name="email" 
+              style="margin-left: 30px"
+              placeholder="Enter Email"/><br /><br />
+            </div>
+            <div class="sai-25">     
+              <label for="password">Password</label>
+            </div>
+            <div class="sai-75">
+              <input required type="password" id="password" name="password"
+              style="margin-left: 30px"
+              placeholder="Enter Password"/><br /><br />
+            </div>
+            <div class="sai-25"> 
+              <label for="dob">Date of Birth</label>
+            </div>
+            <div required class="sai-75">
+              <input required type="date" id="dob" name="dob"
+              style="margin-left: 30px" /><br /><br />
+            </div><br />
+            <div style="text-align: left"> 
+             <label for="acceptTerms">Accept Terms & Conditions</label>
+              <input type="checkbox" id="acceptTerms" name="acceptTerms"
+              style="margin-left :7px" /><br /><br />
+            </div>
+              <button type="submit" id="submit" style="margin-left: 125px;  background-color: #4070f4; color: white; padding: 12px 60px;
+              border: none;
+              border-radius: 7px;
+              cursor: pointer;" onclick="ganval10()">Submit</button>
+          </div>
+        </form>
+      </div>
+    
+      <div class="containp">
+                <h2 class="text-3xl text-center font-bold leading-tight"> Entries</h2><br />
+                <div class="divide-y divide-gray-300/50" id="sai-ent"></div>
+      </div>
+    <script src="local.js"></script>
+  </body>
+</html>
